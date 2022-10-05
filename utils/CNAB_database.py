@@ -5,7 +5,14 @@ c = con.cursor()
 def table():
     c.execute("""
         CREATE TABLE IF NOT EXISTS COMPANY (
-            tipo,data,valor,cpf,cartao,hora,dono,loja
+            tipo INTEGER(1)         NOT NULL,
+            data DATE     NOT NULL,
+            valor INTEGER(10)       NOT NULL,
+            cpf INTEGER(11)         NOT NULL,
+            cartao TEXT(12)     NOT NULL,
+            hora DATE   NOT NULL,
+            dono VARCHAR(14)    NOT NULL,
+            loja VARCHAR(19)    NOT NULL
             )""")
 
 table()
@@ -16,8 +23,7 @@ def insert_values(data_list):
         INSERT INTO COMPANY (tipo,data,valor,cpf,cartao,hora,dono,loja) VALUES
          ({data[0]},{data[1]},{data[2]},{data[3]},"{data[4]}",{data[5]},"{data[6]}","{data[7]}")"""
         select = f"""SELECT * FROM COMPANY"""
-    c.execute(query)
-    print(c.execute(select))
+        c.execute(query)
+        c.execute(select)
 
     con.commit()
-

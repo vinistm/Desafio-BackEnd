@@ -3,7 +3,7 @@ from utils.cnba import read_text
 
 FILEPATH = "CNAB.txt"
 
-
+# teste = [1,20200510,1431111,17307329913,"4253*****2236",141020,"VINICIUS MARTINS","CENTRINHO"]
 def main():
     try:
         data = read_text(FILEPATH)
@@ -14,3 +14,4 @@ def main():
 
 if __name__ == "__main__":
     main()    
+    # insert_values(teste)
