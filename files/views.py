@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from rest_framework import generics
 from files.serializers import FileSerializer
-from .models import CNAB
+from .models import Files
 # Create your views here.
 
 
 class FileAll(generics.ListCreateAPIView):
-    queryset = CNAB.objects.all()
+    queryset = Files.objects.all()
     serializer_class = FileSerializer

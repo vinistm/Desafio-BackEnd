@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import CNAB
+from .models import Files
 
 class FileSerializer(serializers.ModelSerializer):
     class Meta:
-        model = CNAB
+        model = Files
         fields = "__all__"

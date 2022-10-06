@@ -10,6 +10,6 @@ if file_path == True:
     try:
         data = read_file(FILEPATH)
         insert_table(data)
-        print("File found successfully")   
+        print("File found successfully")
     except(FileNotFoundError):
             print("File not found")

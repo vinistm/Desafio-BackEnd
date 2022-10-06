@@ -1,6 +1,6 @@
 from django.db import models
 
-class CNAB(models.Model):
+class Files(models.Model):
 
     tipo = models.CharField(max_length=1)
     data = models.CharField(max_length=6)
