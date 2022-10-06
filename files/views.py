@@ -5,6 +5,6 @@ from .models import CNAB
 # Create your views here.
 
 
-class ViewFile(generics.ListCreateAPIView):
+class FileAll(generics.ListCreateAPIView):
     queryset = CNAB.objects.all()
     serializer_class = FileSerializer

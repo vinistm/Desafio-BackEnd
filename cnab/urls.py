@@ -1,6 +1,6 @@
 from django.urls import path
-from files import views
+from cnab import views
 
 urlpatterns = [
-    path('file/', views.ViewFile.as_view()),
+    path('insert_file/', views.FileView.as_view()),
 ]

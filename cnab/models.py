@@ -4,4 +4,4 @@ from django.forms import CharField
 
 class COMPANY(models.Model):
     title = CharField(max_length=120)
-    fileds = models.FileField(upload_to ='upload/')
+    fields = models.FileField(upload_to ='upload/')
