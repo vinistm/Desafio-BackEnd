@@ -54,3 +54,19 @@ listagem e post de valores, ja com a leitura de um arquivo CNAB.txt
   http://127.0.0.1:8000/api/insertvalues/
   
 ```
+
+
+## DOCUMENTAÇÃO CNAB:
+para população do banco de dados ja existe um arquivo txt.( o qual se encontra dentro da pasta Upload)
+
+para enviar um arquivo no formato use a seguinte configuração
+
+|TIPO| DATA | VALOR | CPF | CARTÃO | HORA | DONO | LOJA |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|3 |20190301 |00000142000 |9620676017 |4753****3153 |153453 |NOME TESTE   |LOJA TESTE|
+
+
+
+no arquivo o codigo fica desta forma :
+
+3201903010000014200096206760174753****3153153453JOÃO NOME TESTE   LOJA TESTE       
