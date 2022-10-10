@@ -13,7 +13,14 @@ def read_file(filepath: str) -> list[dict]:
                 hora = content[42:48]
                 dono = content[48:62]
                 loja = content[62:81]
+
+
                 valor_convertido = int(valor) * 100
+                # list_hora = list(hora)
+                # lista= list(date)
+                # data_format = f"{lista[0]}{lista[1]}{lista[2]}{lista[3]}-{lista[4]}{lista[5]}-{lista[6]}{lista[7]}"
+                # print(data_format)
+                # hora_format = f"{list_hora[0]} {list_hora[1]}:{list_hora[2]} {list_hora[3]}:{list_hora[4]}{list_hora[5]}"
 
                 data = (tipo, date, valor_convertido, cpf, cartao, hora, dono, loja)
                 list_data.append(data)
